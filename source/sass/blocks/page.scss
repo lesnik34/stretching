@@ -1,0 +1,14 @@
+.page__body {
+  margin: 0;
+}
+
+.page__footer {
+  margin-top: 40px;
+  padding-top: 60px;
+  background-color: $silk;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+    padding-top: 120px;
+  }
+}

@@ -1,0 +1,72 @@
+.connection__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 539px;
+    margin: 0 auto;
+    border: 1px solid $basic-black;
+    padding: 20px 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 743px;
+    padding: 49px 40px;
+    padding-bottom: 88px;
+  }
+}
+
+.connection__title {
+  margin-top: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $mine-shaft;
+  position: relative;
+  margin-bottom: 10px;
+
+  &::after {
+    content: "";
+    width: 176px;
+    height: 1px;
+    background-color: $mine-shaft;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 25px;
+    margin-bottom: 21px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 35px;
+    margin-bottom: 45px;
+  }
+}
+
+.connection__text {
+  margin-top: 0;
+  margin-bottom: 22px;
+  font-size: 12px;
+  color: $special-mine-shaft;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    margin-bottom: 81px;
+  }
+}
+
+.connection__social-networks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

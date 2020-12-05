@@ -1,0 +1,39 @@
+.header {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  position: fixed;
+  width: 100vw;
+  background-color: rgba($basic-white, 0.9);
+  top: 0;
+  z-index: 10;
+  transition: $transition-time;
+  height: 67px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+    padding-bottom: 24px;
+    height: 114px;
+  }
+}
+
+.header--preload {
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $basic-white;
+  height: 100%;
+
+  & .path__line-right,
+  & .path__line-left,
+  & .logo_icon {
+    stroke: $basic-black;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  height: 100%;
+  transition: $transition-time;
+}

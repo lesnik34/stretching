@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  font-family: $custom-font;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,17 @@
+.logo {
+  margin: auto;
+}
+
+.logo_icon {
+  stroke: $main-theme;
+  transition: $transition-time;
+
+  @media (min-width: $tablet-width) {
+    width: 195px;
+    height: 51px;
+  }
+}
+
+.logo__link {
+  display: block;
+}

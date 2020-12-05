@@ -1,0 +1,62 @@
+$main-theme: #d3c0b8;
+$basic-white: #ffffff;
+$basic-black: #000000;
+
+$pearl-bush: #e5d6d0;
+$gallery: #eeeeee;
+$soft-amber: #d1bdb5;
+$mine-shaft: #2f2f2f;
+$special-mine-shaft: #373737;
+$tundora: #464646;
+$white-linen: #fbf3ef;
+$special-white-linen: #f8ede8;
+$wafer: #e3d6d0;
+$silk: #bfada6;
+$silver: #a8a8a8;
+
+$custom-font: "Montserrat", "Arial", sans-serif;
+
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
+$transition-time: 1000ms;
+
+@keyframes stretch {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    color: $soft-amber;
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+    color: $basic-black;
+  }
+}
+
+@keyframes stretch-reverse {
+  0% {
+    transform: translateX(5px);
+  }
+  50% {
+    color: $soft-amber;
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+    color: $basic-black;
+  }
+}
+
+@keyframes sub-stretch {
+  0% {
+    transform: translateX(-5px) rotate(180deg);
+  }
+  50% {
+    transform: translateX(10px)  rotate(180deg);
+  }
+  100% {
+    transform: translateX(0)  rotate(180deg);
+  }
+}

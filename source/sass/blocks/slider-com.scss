@@ -1,0 +1,282 @@
+.slider-com {
+  position: relative;
+}
+
+.slider-com__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 40px;
+
+  &::before {
+    content: '“';
+    position: absolute;
+    font-size: 120px;
+    color: $special-white-linen;
+    left: calc(50% - 143px);
+    top: 75px;
+  }
+
+  &::after {
+    content: '”';
+    position: absolute;
+    font-size: 120px;
+    color: $special-white-linen;
+    right: calc(50% - 143px);
+    top: 175px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      left: calc(50% - 163px);
+      top: 121px;
+    }
+
+    &::after {
+      right: calc(50% - 163px);
+      top: 240px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      left: calc(50% - 189px);
+      top: 212px;
+    }
+
+    &::after {
+      right: calc(50% - 189px);
+      top: 362px;
+    }
+  }
+}
+
+.slider-com__item {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: $transition-time;
+}
+
+.slider-com__photo {
+  border: 5px solid $basic-white;
+  border-radius: 100%;
+  width: 102px;
+  height: 102px;
+  background-size: cover;
+  margin-bottom: 15px;
+
+  &--first {
+    background-image: url("../../img/firstcom-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/firstcom-mobile@2x.jpg");
+    }
+  }
+
+  &--second {
+    background-image: url("../../img/secondcom-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/secondcom-mobile@2x.jpg");
+    }
+  }
+
+  &--third {
+    background-image: url("../../img/thirdcom-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/thirdcom-mobile@2x.jpg");
+    }
+  }
+
+  &--fourth {
+    background-image: url("../../img/fourthcom-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/fourthcom-mobile@2x.jpg");
+    }
+  }
+
+  &--fifth {
+    background-image: url("../../img/fifthcom-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/fifthcom-mobile@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 137px;
+    height: 137px;
+    margin-bottom: 26px;
+
+    &--first {
+      background-image: url("../../img/firstcom-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/firstcom-tablet@2x.jpg");
+      }
+    }
+
+    &--second {
+      background-image: url("../../img/secondcom-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/secondcom-tablet@2x.jpg");
+      }
+    }
+
+    &--third {
+      background-image: url("../../img/thirdcom-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/thirdcom-tablet@2x.jpg");
+      }
+    }
+
+    &--fourth {
+      background-image: url("../../img/fourthcom-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/fourthcom-tablet@2x.jpg");
+      }
+    }
+
+    &--fifth {
+      background-image: url("../../img/fifthcom-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/fifthcom-tablet@2x.jpg");
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 229px;
+    height: 229px;
+    border: 10px solid $basic-white;
+
+    &--first {
+      background-image: url("../../img/firstcom-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/firstcom-desktop@2x.jpg");
+      }
+    }
+
+    &--second {
+      background-image: url("../../img/secondcom-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/secondcom-desktop@2x.jpg");
+      }
+    }
+
+    &--third {
+      background-image: url("../../img/thirdcom-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/thirdcom-desktop@2x.jpg");
+      }
+    }
+
+    &--fourth {
+      background-image: url("../../img/fourthcom-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/fourthcom-desktop@2x.jpg");
+      }
+    }
+
+    &--fifth {
+      background-image: url("../../img/fifthcom-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/fifthcom-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.slider-com__text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  max-width: 225px;
+  color: $mine-shaft;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    max-width: 262px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    max-width: 340px;
+  }
+}
+
+.slider-com__controls {
+  $width: 260px;
+  position: absolute;
+  margin: auto;
+  width: $width;
+  display: flex;
+  justify-content: space-between;
+  top: 26px;
+  left: calc(50% - #{$width / 2});
+
+  @media (min-width: $tablet-width) {
+    $width: 300px;
+    width: $width;
+    left: calc(50% - #{$width / 2});
+    top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 89px;
+    $width: 370px;
+    width: $width;
+    left: calc(50% - #{$width / 2});
+  }
+}
+
+.slider-com__button {
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/icons/arrow_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 55px;
+  height: 55px;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+
+  &--left:focus,
+  &--right:focus {
+    outline: none;
+  }
+
+  &--right:active {
+    animation: sub-stretch 500ms;
+    outline: none;
+  }
+
+  &--left:hover,
+  &--right:hover {
+    outline: none;
+  }
+
+  &--left:active {
+    animation: stretch-reverse 500ms;
+  }
+}
